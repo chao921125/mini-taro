@@ -1,18 +1,19 @@
-import { Component } from "react";
-import "./app.scss";
-class App extends Component {
-  componentDidMount() {}
+import React, { useEffect } from 'react'
+import { useDidShow, useDidHide } from '@tarojs/taro'
+// 全局样式
+import './app.scss'
 
-  componentDidShow() {}
+function App(props) {
+  // 可以使用所有的 React Hooks
+  useEffect(() => {})
 
-  componentDidHide() {}
+  // 对应 onShow
+  useDidShow(() => {})
 
-  componentDidCatchError() {}
+  // 对应 onHide
+  useDidHide(() => {})
 
-  // this.props.children 是将要会渲染的页面
-  render() {
-    return this.props.children;
-  }
+  return props.children
 }
 
-export default App;
+export default App

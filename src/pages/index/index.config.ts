@@ -1,4 +1,3 @@
-export default {
-  navigationBarTitleText: 'Taro-hooks',
-  enableShareAppMessage: true,
-};
+export default definePageConfig({
+  navigationBarTitleText: '首页'
+})
