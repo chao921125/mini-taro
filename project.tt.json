@@ -1,7 +1,7 @@
 {
   "miniprogramRoot": "./",
-  "projectname": "taro",
-  "description": "react 小程序项目",
+  "projectname": "taro-mini",
+  "description": "taro mini h5",
   "appid": "touristappid",
   "setting": {
     "urlCheck": true,
