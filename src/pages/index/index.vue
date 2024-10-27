@@ -1,17 +1,14 @@
 <template>
   <view class="index">
-    <Counter />
+    <nut-button type="primary" @click="onClick">按钮</nut-button>
+    <nut-toast v-model:visible="show" msg="你成功了" />
   </view>
 </template>
 
-<script>
-import './index.scss'
-import Counter from '../../components/Counter.vue'
-
-export default {
-  name: 'Index',
-  components: {
-    Counter
-  }
+<script setup>
+import { ref } from 'vue'
+const show = ref(false)
+const onClick = () => {
+  show.value = true
 }
 </script>
